@@ -10,6 +10,10 @@ void printArray(const std::vector<int>& arr) {
     std::cout << "\n";
 }
 
+// selection sort: 
+// time complexity O(n^2)
+// space complexity O(1)
+
 // znajdujemy najwiekszy element w nieposortowanej czesci tablicy i zamienia go z koncem nieposortowanej czesci tablicy
 void selectionSort1(std::vector<int>& arr) { 
     const int length = arr.size();

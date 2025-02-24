@@ -1,11 +1,18 @@
 This is my private repo where i will be practicing DSA in c++
 
-Algorithims that i want to implement:
+Algorithims and data structures that i want to implement:
 
-- binary search
-- linear search
-- bubble sort
-- selection sort
-- insertion sort
-- quick sort
-- merge sort
+algos:
+- binary search [x]
+- linear search [x]
+- bubble sort [x]
+- selection sort [x]
+- insertion sort [ ] <--- implemented it but didnt quite understand the algorithm
+- quick sort [x]
+- merge sort [ ]
+
+ds:
+- queue [x]
+- stack [ ]
+- doubly linked list [ ]
+- ring buffer [ ]
