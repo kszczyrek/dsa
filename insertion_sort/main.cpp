@@ -16,7 +16,7 @@ void insertionSort(std::vector<int> arr) {
         int j = i - 1;
 
         while(j >= 0 && arr[j] > tmp) {
-            arr[j + 1] = arr[j];
+            arr[j + 1] = arr[j];          // [2] [4] [7] | [1]
             j--;
         }
         arr[j+1] = tmp;
