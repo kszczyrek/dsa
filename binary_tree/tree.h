@@ -15,7 +15,7 @@ class Tree {
         void r_preRecurseTraversal(Node* curr) const;
         void r_recurseTraversal(Node* curr) const;
         void r_postRecurseTraversal(Node* curr) const;
-        void r_dfs(int& e, bool& found, Node* curr);
+        bool r_dfs(int& e, Node* curr);
     public:
     //void clear();
     void insert(int e);

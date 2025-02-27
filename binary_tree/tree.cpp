@@ -65,25 +65,21 @@ void Tree::r_postRecurseTraversal(Node* curr) const {
 }
 
 bool Tree::dfs(int e) {
-    Node* curr = root;
-    if(!root) { 
-        return false;
-    } else { 
-        bool found = false;
-        r_dfs(e, found, curr);
-        return found;
-    }
+    return r_dfs(e, root);
 }
 
 
-void Tree::r_dfs(int& e, bool& found, Node* curr) {
+bool Tree::r_dfs(int& e, Node* curr) {
     if(!curr) {
-        return;
+        return false;
     } else if(curr->elem == e) { 
-        found = true;
+        std::cout << curr->elem << "\n";
+        return true;
     } else if(curr->elem > e) {
-        r_dfs(e, found, curr->left);
-    } else if(curr->elem < e) {
-        r_dfs(e, found, curr->right); 
+        std::cout << curr->elem << "\n";
+        return r_dfs(e, curr->left);
+    } else {
+        std::cout << curr->elem << "\n";
+        return r_dfs(e, curr->right); 
     }        
 }

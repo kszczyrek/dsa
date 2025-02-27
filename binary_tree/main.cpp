@@ -11,14 +11,18 @@ int main(void){
     t.insert(5);
     t.insert(7);
     t.insert(-1);
+    t.insert(1);
+    t.insert(8);
+    t.insert(6);
+    t.insert(3);
+    t.insert(22);
+    t.insert(19);
 
-    //
-    t.preRecurseTraversal();
-    std::cout << "\n\n";
-    t.recurseTraversal();
-    std::cout << "\n\n";
-    t.postRecurseTraversal();
-    std::cout << (t.dfs(-1)? "true\n" : "false\n");
-    std::cout << (t.dfs(20)? "true\n" : "false\n");
+    // t.preRecurseTraversal();
+    // std::cout << "\n\n";
+    // t.recurseTraversal();
+    // std::cout << "\n\n";
+    // t.postRecurseTraversal();
+     std::cout << (t.dfs(100)? "true\n" : "false\n");
     return 0;
 }
