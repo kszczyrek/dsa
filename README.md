@@ -13,6 +13,7 @@ algos:
 
 ds:
 - queue [x]
-- stack [ ]
-- doubly linked list [ ]
+- stack []
+- doubly linked list [x]
 - ring buffer [ ]
+- binary tree []

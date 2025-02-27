@@ -1,15 +1,13 @@
 #pragma once
 
-struct Node{
-    friend class List;
-    private:
-        Node* next = nullptr;
-        Node* prev = nullptr;
-        int elem;
-};
 
 class List {
     private:
+        struct Node{
+            Node* next = nullptr;
+            Node* prev = nullptr;
+            int elem;
+        };
         Node* first = nullptr;
         Node* last = nullptr;
         int length = 0;
