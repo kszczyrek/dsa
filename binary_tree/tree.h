@@ -1,4 +1,5 @@
 #pragma once
+#include "queue.h"
 
 class Tree {
     private:
@@ -15,6 +16,7 @@ class Tree {
         void r_preRecurseTraversal(Node* curr) const;
         void r_recurseTraversal(Node* curr) const;
         void r_postRecurseTraversal(Node* curr) const;
+        void r_bfsTraversal(Queue<Node*>& q);
         bool r_dfs(int& e, Node* curr);
     public:
     //void clear();
@@ -23,8 +25,9 @@ class Tree {
     void preRecurseTraversal(); 
     void recurseTraversal(); 
     void postRecurseTraversal(); 
+    void bfsTraversal();
     bool dfs(int e); 
-    //bool bfs(int e);
+    bool bfs(int e);
     //void delete(int e);
     //int getHeight();
     //void compare(Tree b);

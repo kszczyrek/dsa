@@ -1,5 +1,6 @@
 #include <iostream>
 #include "tree.h"
+#include "queue.h"
 
 void Tree::insert(int e) {
     if(!root) {
@@ -82,4 +83,33 @@ bool Tree::r_dfs(int& e, Node* curr) {
         std::cout << curr->elem << "\n";
         return r_dfs(e, curr->right); 
     }        
+}
+
+void Tree::bfsTraversal() {
+    Queue<Node*> q;
+    q.queue(root);
+    r_bfsTraversal(q);
+}
+
+void Tree::r_bfsTraversal(Queue<Node*>& q) {
+    if(q.getLength() > 0) {
+        Node* curr = q.dequeue();
+        std::cout << curr->elem << "\n";
+        if (curr->left) q.queue(curr->left);
+        if (curr->right) q.queue(curr->right);
+        r_bfsTraversal(q);
+    }
+}
+
+// iteracyjna wersja
+bool Tree::bfs(int e) {
+    Queue<Node*> q;
+    q.queue(root);
+    while(q.getLength() > 0) {
+        Node* curr = q.dequeue();
+        if (curr->elem == e) return true;
+        if (curr->left) q.queue(curr->left);
+        if (curr->right) q.queue(curr->right);
+    }
+    return false;
 }
