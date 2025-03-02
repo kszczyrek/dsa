@@ -7,7 +7,7 @@ algos:
 - linear search [x]
 - bubble sort [x]
 - selection sort [x]
-- insertion sort [ ] <--- implemented it but didnt quite understand the algorithm
+- insertion sort [x] 
 - quick sort [x]
 - merge sort [ ]
 
@@ -15,5 +15,7 @@ ds:
 - queue [x]
 - stack []
 - doubly linked list [x]
-- ring buffer [ ]
-- binary tree []
+- ring buffer []
+- binary tree [x]
+- graphs []
+- heaps [x]
