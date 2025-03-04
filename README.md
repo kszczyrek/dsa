@@ -10,6 +10,8 @@ algos:
 - insertion sort [x] 
 - quick sort [x]
 - merge sort [ ]
+- bfs/dfs for trees and graphs [x]
+- dijkstra algoritm [x]
 
 ds:
 - queue [x]
@@ -17,5 +19,6 @@ ds:
 - doubly linked list [x]
 - ring buffer []
 - binary tree [x]
-- graphs []
+- graphs [x]
 - heaps [x]
+- LRU cache
